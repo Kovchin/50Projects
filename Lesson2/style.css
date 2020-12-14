@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
 
-:root{
-  --line-border-fill: #3498db;
+:root {
+    --line-border-fill: #3498db;
     --line-border-empty: #e0e0e0;
 }
 
@@ -11,8 +11,12 @@
     padding: 0;
 }
 
+h1{
+    color: darkred;
+}
+
 body {
-    background-color: #f6f;
+    background-color: green;
     font-family: 'Muli', sans-serif;
     display: flex;
     margin: 0;
@@ -23,12 +27,12 @@ body {
     overflow: hidden;
 }
 
-.container{
+.container {
     margin: 20px;
     text-align: center;
 }
 
-.progress-container{
+.progress-container {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -37,7 +41,7 @@ body {
     width: 350px;
 }
 
-.progress-container::before{
+.progress-container::before {
     content: '';
     background-color: var(--line-border-empty);
     position: absolute;
@@ -49,7 +53,7 @@ body {
     z-index: -1;
 }
 
-.progress{
+.progress {
     background-color: var(--line-border-fill);
     position: absolute;
     top: 50%;
@@ -61,7 +65,7 @@ body {
     transition: 0.4s ease;
 }
 
-.circle{
+.circle {
     background-color: #fff;
     color: #999;
     border-radius: 50%;
@@ -74,11 +78,11 @@ body {
     transition: 0.4s ease;
 }
 
-.circle.active{
+.circle.active {
     border-color: var(--line-border-fill);
 }
 
-.btn{
+.btn {
     background-color: var(--line-border-fill);
     color: #fff;
     border: 0;
@@ -90,15 +94,15 @@ body {
     font-size: 14px;
 }
 
-.btn:active{
+.btn:active {
     transform: scale(0.98);
 }
 
-.btn:focus{
+.btn:focus {
     outline: 0;
 }
 
-.btn:disabled{
+.btn:disabled {
     background-color: var(--line-border-empty);
     cursor: not-allowed;
 }
