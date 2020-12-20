@@ -12,11 +12,22 @@
 <body>
 
 <div class="container">
-    <h1>Форма регистраиции</h1>
+    <h1>Please login</h1>
     <form action="">
-        <input type="text" placeholder="login">
-        <input type="password" placeholder="password">
-        <input type="submit" value="Зарегистрировать">
+        <div class="form-control">
+            <input type="text" required>
+            <label for="">Email</label>
+        </div>
+
+        <div class="form-control">
+            <input type="password" required name="" id="">
+            <label for="">Password</label>
+        </div>
+
+        <button class="btn">Login</button>
+
+        <p class="text">Don't have an account? <a href="">Register</a></p>
+
     </form>
 </div>
 
